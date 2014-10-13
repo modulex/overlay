@@ -1,0 +1,1 @@
+modulex.config("requires",{"overlay":["component/container","component/extension/shim","component/extension/align","component/extension/content-box","node","ua","event-dom/gesture/tap","util","xtemplate/runtime"]});

@@ -1,0 +1,26 @@
+{
+    "name": "modulex-overlay",
+    "author": "yiminghe <yiminghe@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/kissyteam/overlay.git"
+    },
+    "ignore": [
+        "**/*",
+        "!build/**/*",
+        "!lib/**/*",
+        "!meta/**/*",
+        "!index.js"
+    ],
+    "dependencies": {
+        "modulex": "modulex#master",
+        "modulex-feature": "modulex-feature#master",
+        "modulex-ua": "modulex-ua#master",
+        "modulex-css": "modulex-css#master",
+        "modulex-component": "modulex-component#master"
+    },
+    "devDependencies": {
+        "modulex-button": "modulex-button#master"
+    }
+}
