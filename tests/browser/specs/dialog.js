@@ -90,7 +90,7 @@ describe("dialog", function () {
         });
 
         it("应该可以拖动", function (done) {
-            if (ie === 9 || ie === 11) {
+            if (ie === 9 || ie === 11 || window.callPhantom) {
                 done();
                 return;
             }
@@ -106,7 +106,6 @@ describe("dialog", function () {
 
                 runs(function () {
                     window.simulateEvent(document, 'mousemove', {
-
                         clientX: xy[0] + 150,
                         clientY: xy[1] + 150
                     });
@@ -132,8 +131,8 @@ describe("dialog", function () {
 
                 runs(function () {
                     var dxy = [d.get('x'), d.get('y')];
-                    expect(dxy[0] - xy[0] - 90).to.within(-5, 5)
-                    expect(dxy[1] - xy[1] - 90).to.within(-5, 5)
+                    expect(dxy[0] - xy[0] - 90).to.within(-5, 5);
+                    expect(dxy[1] - xy[1] - 90).to.within(-5, 5);
                 })], done);
         });
 
