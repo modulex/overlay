@@ -1,3 +1,8 @@
+/*
+Copyright 2014, modulex-overlay@1.0.1
+MIT Licensed
+build time: Thu, 16 Oct 2014 07:52:58 GMT
+*/
 modulex.add("overlay", ["node","ua","event-dom/gesture/tap","util","xtemplate/runtime","component/container","component/extension/shim","component/extension/align","component/extension/content-box"], function(require, exports, module) {
 var _node_ = require("node");
 var ua = require("ua");
@@ -359,6 +364,7 @@ overlayExtensionOverlayEffect = function (exports) {
   return exports;
 }();
 overlayXtplOverlay = function (exports) {
+  /*compiled by xtemplate#3.3.1*/
   var ret = exports = function overlay(undefined) {
     var t;
     var t0;
@@ -473,6 +479,7 @@ overlayXtplOverlay = function (exports) {
   return exports;
 }();
 overlayXtplDialog = function (exports) {
+  /*compiled by xtemplate#3.3.1*/
   var ret = exports = function dialog(undefined) {
     var t;
     var t0;
@@ -982,6 +989,7 @@ overlay = function (exports) {
   O.Dialog = D;
   O.Popup = P;
   exports = O;
+  O.version = '1.0.1';
   return exports;
 }();
 module.exports = overlay;
